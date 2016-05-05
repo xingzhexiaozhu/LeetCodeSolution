@@ -1,4 +1,6 @@
 
+//关于链表的一些问题
+
 public class ListNode {	
 	int val;
 	ListNode next;
@@ -40,8 +42,7 @@ public class ListNode {
 		}
 		return head;
 	}
-	
-	
+		
 	
 	//Reverse a linked list(反转一个LinkedList).
 	//方法一：recursively（递归）
