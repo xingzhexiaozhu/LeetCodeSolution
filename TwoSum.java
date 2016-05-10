@@ -19,8 +19,7 @@ public class TwoSum {
 					return result;
 				}
 			}
-		}
-		
+		}		
 		return result;
 	}
 	
