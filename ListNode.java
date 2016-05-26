@@ -73,6 +73,23 @@ public class ListNode {
 		}
 		return pre;
 	}
+	//方法三：通过循环依次交换各结点值
+//	public ListNode reverseList(ListNode head) {
+//  if(head == null || head.next == null)
+//		return head;
+//	
+//	ListNode pre = head;
+//	ListNode cur = head.next;
+//	pre.next = null;
+//	ListNode temp;
+//	while(cur != null){
+//		temp = cur.next;
+//		cur.next = pre;
+//		pre = cur;
+//		cur = temp;
+//	}
+//	return pre;
+//}
 	
 	//Reverse a linked list from position m to n
 //	public ListNode reverseBetween(ListNode head, int m, int n){
