@@ -13,7 +13,7 @@ public class RemoveDuplicatesFromSortedList {
 		val = x;
 	}
 	
-	//删除重复的结点
+	//删除重复的结点：两个指针 ，分别从头开始，如果下一指针指向的元素与上一指针指向的元素相同则只将下一指针后移；否则两指针同时后移
 	public static RemoveDuplicatesFromSortedList deleteDuplicates(RemoveDuplicatesFromSortedList head){
 		RemoveDuplicatesFromSortedList pre = new RemoveDuplicatesFromSortedList(-1);
 		RemoveDuplicatesFromSortedList cur = head;
