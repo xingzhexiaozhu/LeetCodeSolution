@@ -5,7 +5,10 @@ import java.util.Stack;
 
 public class MinStack {
 
-	//解题思路：借用两个栈，一个存放进栈数据，另一个存放最小元素
+	//解题思路：借用两个栈，一个存放进栈数据（数据栈），另一个存放最小元素（辅助栈）
+	//入栈：将元素直接压入数据栈中；当辅助栈为空or元素小于辅助栈栈顶元素，则压入辅助栈中
+	//出栈：数据栈不空的前提下，如果辅助栈栈顶元素与数据栈栈顶元素相等则都出栈，否则只有数据栈栈顶元素出栈
+	//得到当前栈最小元素：直接返回辅助栈栈顶元素即可
 	private Stack<Integer> dataStack = new Stack<>();
 	private Stack<Integer> minStack = new Stack<>();
 	
@@ -31,6 +34,7 @@ public class MinStack {
     }
     
     public int getMin() {
+    	//辅助栈栈顶存放的是栈中最小元素
         return minStack.peek();
     }
 	
